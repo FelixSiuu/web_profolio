@@ -4,9 +4,9 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '.
 export default async function CoreSkills() {
   const response = await coreSkillsService.getCoreSkills()
 
-  const { data, success } = response
+  const { data, isSuccess } = response
 
-  if (!success) return <div>加載出錯了！</div>
+  if (!isSuccess) return <div>加載出錯了！</div>
 
   return (
     <Table>

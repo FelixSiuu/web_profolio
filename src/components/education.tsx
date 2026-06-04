@@ -3,9 +3,9 @@ import { educationService } from '@/services/myInfo.service'
 export default async function Education() {
   const response = await educationService.getEducation()
 
-  const { data, success } = response
+  const { data, isSuccess } = response
 
-  if (!success) return <div>加載出錯了！</div>
+  if (!isSuccess) return <div>加載出錯了！</div>
 
   return (
     <>

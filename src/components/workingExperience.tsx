@@ -5,9 +5,9 @@ import { Separator } from './ui/separator'
 export default async function WorkingExperience() {
   const response = await workingExpService.getWorkingExp()
 
-  const { data, success } = response
+  const { data, isSuccess } = response
 
-  if (!success) return <div>加載出錯了！</div>
+  if (!isSuccess) return <div>加載出錯了！</div>
 
   return (
     <>

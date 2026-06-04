@@ -22,7 +22,7 @@ export default function MyHeader() {
           <p>Hi, I am Felix</p>
         </CardContent>
         <CardFooter>
-          <div className="flex gap-3">
+          <div className="flex gap-3 md:flex-row flex-col">
             tel: <a href="tel:+852 68455092">+852 68455092</a> <Separator orientation="vertical" /> email: <a href="mailto:b1044327634@gmail.com">b1044327634@gmail.com</a>
           </div>
         </CardFooter>
