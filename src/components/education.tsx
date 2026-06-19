@@ -1,4 +1,7 @@
+import { REVALIDATE_TIME } from '@/config'
 import { educationService } from '@/services/myInfo.service'
+
+export const revalidate = REVALIDATE_TIME
 
 export default async function Education() {
   const response = await educationService.getEducation()

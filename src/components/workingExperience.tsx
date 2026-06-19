@@ -1,6 +1,9 @@
 import { workingExpService } from '@/services/myInfo.service'
 import { utils } from '@/utils'
 import { Separator } from './ui/separator'
+import { REVALIDATE_TIME } from '@/config'
+
+export const revalidate = REVALIDATE_TIME
 
 export default async function WorkingExperience() {
   const response = await workingExpService.getWorkingExp()

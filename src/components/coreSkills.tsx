@@ -1,5 +1,8 @@
 import { coreSkillsService } from '@/services/myInfo.service'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table'
+import { REVALIDATE_TIME } from '@/config'
+
+export const revalidate = REVALIDATE_TIME
 
 export default async function CoreSkills() {
   const response = await coreSkillsService.getCoreSkills()
