@@ -1,6 +1,6 @@
 import api from './api'
 
-const publicPath = '/myInfo'
+const publicPath = '/public/felixsiuInfo'
 
 export const aboutService = {
   getAboutMe: async (): Promise<BaseVo<About[]>> => {
